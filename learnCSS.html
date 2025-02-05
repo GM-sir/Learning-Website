@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Learn CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header-->
+  <header> 
+    <div class="upperflex-container">
+      <div class="logo"><img src="image/logo.png" height="80px" width="65px" ></div>
+      
+      
+      
+    </div>
+    <div class="flex-container">
+      <div><a href="home.html">Home</a></div>
+      <div><a href="index.html">HTML</a></div>
+      <div><a href="learnCSS">CSS</a></div>
+      <div><a href="aboutus">About Us</a></div>
+      <div><a href="contractUs.html">Contract Us</a></div>
+    </div><hr>
+  </header><br> <br>
+  <h3>1. What is CSS? </h3>
+  <b>CSS (Cascading Style Sheets)</b> is a style sheet language used to describe the look and formatting of a document written in HTML. It is used to enhance the presentation of web pages by defining styles such as layout, colors, fonts, and spacing.
+  <h3>Types of CSS: </h3>
+  <ol>
+    <li><b>Inline CSS: </b>Defined directly in an HTML tag using the style attribute.</li><br>
+    <li><b>Internal CSS: </b>Written inside a &lt;style> tag within the &lt;head> section of the HTML file. </li><br>
+    <li><b>External CSS:</b> Placed in an external file (e.g., style.css) and linked using a &lt;link> tag. </li><br>
+    
+  </ol>
+  <p><h3>2. CSS Syntax </h3></p>
+  CSS syntax consists of <b>selectors, properties,</b> and values. <br>
+  <pre>
+    /* Example Syntax */ 
+  selector 
+  { 
+    property: value; 
+  }
+  </pre><br>
+  <ul>
+    <li><b>Selector: </b>Selects the HTML element to style. </li><br>
+    <li><b>Property: </b>A style attribute like color, font-size, or margin. </li><br>
+    <li><b>Value:</b> Specifies the property’s style. </li><br>
+  </ul>
+  <b>Example: </b>
+  <pre>
+    p { 
+      color: blue; 
+      font-size: 16px;
+    } 
+  </pre>
+  <h3>3. Basic Selectors </h3>
+  <b>a. Universal Selector (*) </b><br>
+  Applies to all elements.
+  <pre>
+    * {
+      margin: 0; 
+      padding: 0;
+    } 
+  </pre>
+  <b>b. Type Selector </b><br>
+  Targets specific HTML tags like &lt;h1>, &lt;p>, etc. 
+  <pre>
+    h1 {
+      color: green; 
+    } 
+  </pre>
+  <h3>c. Class Selector (.classname) </h3>
+  Styles elements with a specific class attribute. 
+  <pre>
+    &lt;p class="highlight">This is a highlighted paragraph.&lt;/p>
+    .highlight { 
+      background-color: yellow; 
+    } 
+  </pre>
+  <h3>d. ID Selector (#idname) </h3>
+  Styles a unique element with an id attribute. 
+  <pre>
+     &lt;h1 id="main-title">Welcome to CSS &lt;/h1>
+    #main-title { 
+      font-size: 24px; 
+      text-align: center;
+    } 
+  </pre>
+  <h3>4. Adding CSS to HTML </h3>
+  <b>a. Inline CSS </b><br>
+  Styles are applied directly to the HTML element using the style attribute. 
+  <pre>
+    &lt;p style="color: red; font-size: 20px;">This is an inline-styled paragraph.&lt;/p> 
+  </pre>
+  <b>b. Internal CSS </b><br>
+  Styles are written inside a &lt;style> tag within the &lt;head> section. 
+    <pre>
+      &lt;!DOCTYPE html> 
+      &lt;html lang="en"> 
+     &lt;head> 
+        &lt;style> 
+        p { 
+          color: blue;
+          font-size: 18px;
+        }
+        &lt;/style> 
+      &lt;/head> 
+      &lt;body> 
+        &lt;p>This is an internally styled paragraph.&lt;/p>
+      &lt;/body> 
+      &lt;/html> 
+    </pre>
+  
+</body>
+</html>

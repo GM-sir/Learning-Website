@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport " content="width=device-width, initial-scale=1.0">
+ <meta name="description " content="how to learn JTML, CSS, javascript and Python with our easy tutorial ">
+ <meta name="keyword" content="HTML, JAVASCRIPT, CSS, Web development ">
+ <meta name="Author " content="Sayad Golam Morshed ">
+  <title>List</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+<body>
+  <!-- Header-->
+  <header> 
+    <div class="upperflex-container">
+      <div class="logo"><img src="image/logo.png" height="80px" width="65px" ></div>
+      
+      
+      
+    </div>
+    <div class="flex-container">
+      <div><a href="home.html">Home</a></div>
+      <div><a href="index.html">HTML</a></div>
+      <div><a href="learnCSS.html">CSS</a></div>
+      <div><a href="aboutus.html">About Us</a></div>
+      <div><a href="contractUs.html">Contract Us</a></div>
+    </div><hr>
+  </header><br> <br>
+  
+  <h3>Learn With GM Sir</h3><br>
+ <h3>HTML List Tags </h3>
+ HTML provides several types of list tags to display items in an organized manner. There are three main types of lists in HTML: <br>
+ <h3>1. Ordered List (&lt;ol&gt;) </h3>
+  An ordered list displays items in a numbered or sequential order. 
+ <p><b>Syntax: </b></p>
+  <pre>
+     &lt;ol&gt;
+       &lt;li&gt; Item 1 &lt;/li&gt; 
+       &lt;li&gt; Item 2 &lt;/li&gt; 
+       &lt;li&gt; Item 3 &lt;/li&gt; 
+     &lt;/ol&gt; 
+  </pre>
+  <b>Output: </b>
+  <ol type="1">
+    <li>Item 1</li><br>
+    <li>Item 2</li><br>
+    <li>Item 3</li><br>
+  </ol><br>
+ <h3>2. Unordered List (&lt;ul&gt;) </h3>
+   An unordered list displays items with bullet points, regardless of order. 
+ <b>Syntax</b> 
+   <pre>
+     &lt;ul&gt; 
+       &lt;li&gt; Item A&lt;/li&gt; 
+       &lt;li&gt; Item B&lt;/li&gt;  
+       &lt;li&gt; Item C&lt;/li&gt; 
+     &lt;/ul&gt;  
+   </pre>
+ <b>Output: </b>
+   <ul type="disc">
+     <li>Item A</li><br>
+     <li>Item B</li><br>
+     <li>Item C</li><br>
+   </ol><br>
+<h3>3. Definition List ( &lt;dl&gt; ) </h3>
+  A definition list is used to display terms and their descriptions. 
+  <b>Syntax: </b>
+  <pre>
+    &lt;dl&gt;
+      &lt;dt&gt;HTML&lt;/dt&gt; 
+      &lt;dd&gt;A markup language for creating web pages.&lt;/dd&gt;
+      &lt;dt&gt;CSS&lt;/dt&gt;
+      &lt;dd&gt;A style sheet language for designing web pages.&lt;/dd&gt;           
+    &lt;/dl&gt;
+  </pre>
+  <b>Output: </b>
+  <p><b>HTML</b></p>
+  A markup language for creating web pages. 
+ <p><b>CSS</b></p>
+  A style sheet language for designing web pages. <br><br>
+<h3>Attributes in List Tags </h3><br>
+<p><h3> 1. Type Attribute for &lt;ol> </h3></p>
+  Specifies the type of numbering (e.g., numbers, Roman numerals, letters). 
+  <pre>
+    &lt;ol type="I"> 
+      &lt;li>Item 1&lt;/li>
+      &lt;li>Item 2&lt;/li> 
+    &lt;/ol>
+  </pre>
+  <b>Output:</b>
+    <ol type="I"> 
+      <li>Item 1</li>
+      <li>Item 2</li> 
+    </ol><br>
+ <p><h3>2. Type Attribute for &lt;ul> </h3></p>
+  Changes the bullet style (e.g., circle, square, disc). 
+  <pre>
+    &lt;ul style="list-style-type: square;"> 
+      &lt;li>Item A&lt;/li> 
+      &lt;li>Item B&lt;/li> 
+    &lt;/ul> 
+  </pre>
+  <b>Output:</b>
+  <ul style="list-style-type: square;"> 
+      <li>Item A</li> 
+      <li>Item B</li> 
+    </ul> <br>
+  <p><b>Nesting Lists</b></p>
+  Lists can be nested to create complex structures. 
+  <p> <b>Example:</b></p>
+  <pre>
+    &lt;ul> 
+      &lt;li>Fruits 
+        &lt;ul> 
+          &lt;li>Apple&lt;/li> 
+          &lt;li>Banana&lt;/li>              
+        &lt;/ul> 
+      &lt;/li> 
+      &lt;li>Vegetables 
+        &lt;ol> 
+          &lt;li>Carrot&lt;/li> 
+          &lt;li>Broccoli&lt;/li>              
+        &lt;/ol> 
+      &lt;/li> 
+    &lt;/ul>
+  </pre>
+  <b>Output:</b>
+  <ul> <li>Fruits <ul> <li>Apple</li> <li>Banana</li> </ul> </li> <li>Vegetables <ol> <li>Carrot</li> <li>Broccoli</li> </ol> </li> </ul><br>
+      
+  <h3>Example of All List Types Together </h3>
+  <pre>
+    &lt;!DOCTYPE html> 
+    &lt;html> 
+    &lt;head> 
+      &lt;title>HTML Lists Example&lt;/title>           
+    &lt;/head>
+    &lt;body>
+      &lt;h2>Ordered List&lt;/h2> 
+      &lt;ol> 
+        &lt;li>Step 1&lt;/li> 
+        &lt;li>Step 2&lt;/li>
+        &lt;li>Step 3&lt;/li>             
+      &lt;/ol>
+          
+      &lt;h2>Unordered List&lt;/h2> 
+      &lt;ul> 
+        &lt;li>Option A&lt;/li>
+        &lt;li>Option B&lt;/li> 
+        &lt;li>Option C&lt;/li>           
+      &lt;/ul>
+          
+      &lt;h2>Definition List&lt;/h2> 
+      &lt;dl> 
+        &lt;dt>JavaScript&lt;/dt>
+        &lt;dd>A scripting language for web development.&lt;/dd>
+        &lt;dt>Python&lt;/dt> 
+        &lt;dd>A programming language for various applications.&lt;/dd>            
+      &lt;/dl> 
+    &lt;/body>
+    &lt;/html> 
+  </pre>
+  When rendered in a browser, this displays all three types of lists with their distinct formatting. <br>
+    <button><a href="textformating.html">Previous Page</a>  </button>
+    <button> <a href="linksandimage.html">Next Page</a></button>
+    
+</body>
+</html>

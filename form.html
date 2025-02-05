@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header-->
+  <header> 
+    <div class="upperflex-container">
+      <div class="logo"><img src="image/logo.png" height="80px" width="65px" ></div>
+      
+      
+      
+    </div>
+    <div class="flex-container">
+      <div><a href="home.html">Home</a></div>
+      <div><a href="index.html">HTML</a></div>
+      <div><a href="learnCSS.html">CSS</a></div>
+      <div><a href="aboutus.html">About Us</a></div>
+      <div><a href="contractUs.html">Contract Us</a></div>
+    </div><hr>
+  </header><br> <br>
+  
+  <h3>Learn With GM Sir</h3><br>
+  <p><b>Forms and Input </b></p>
+  <b>Form Tag (&lt;form>) </b>
+    The &lt;form> tag is used to collect user input and send it to a server. 
+      <p><b>Code Example: </b></p> 
+  <pre>
+     &lt;form action="submit_form.php" method="post"> 
+     &lt;label for="name">Name:&lt;/label> 
+     &lt;input type="text" id="name" name="name">&lt;br>&lt;br>
+     &lt;label for="password">Password:&lt;/label> 
+     &lt;input type="password" id="password" name="password">&lt;br>&lt;br>
+     &lt;label for="email">Email:&lt;/label> 
+     &lt;input type="email" id="email" name="email">&lt;br>&lt;br>
+     &lt;input type="submit" value="Submit">     
+     &lt;/form>  
+  </pre>
+  <b>Input Types </b>  
+  <ol>
+     <li><b>text: </b>Single-line text input. </li><br>
+     <li><b>password:</b> Obscured input for passwords. </li><br>
+     <li><b>email:</b> For email addresses with validation. </li><br>
+     <li><b>submit: </b>Button to submit the form. </li>
+     
+  </ol>
+  <b>Textareas and Buttons </b>
+  <ul>
+    <li>&lt;textarea>: Multi-line text input. </li><br>
+    <li>&lt;button>: Customizable button. </li>
+  </ul>
+  <b>Code Example:</b>
+  <pre>
+    &lt;form> 
+      &lt;label for="message">Message:</label><br> 
+      &lt;textarea id="message" name="message" rows="4" cols="50"></textarea><br><br> 
+      &lt;button type="button" onclick="alert('Button clicked!')">Click Me</button> 
+    &lt;/form> 
+  </pre>
+  HTML provides built-in form validation features that can be applied using attributes without requiring JavaScript. Below is a comprehensive explanation and example of form validation using HTML: 
+<p><b>HTML Form Validation Attributes </b></p>
+<ol>
+  <li><b>required: </b>required: Ensures the field is filled before submission. </li><br>
+  <li><b>pattern:</b> Specifies a regular expression for custom validation</li><br>
+  <li><b>maxlength and minlength:</b> Restricts the number of characters. </li><br>
+  <li><b>type:</b> Defines input types with specific validation (e.g., email, number). </li><br>
+  <li><b>min and max: </b>Sets a range for numeric inputs. </li><br>
+  <li><b>step:</b> Specifies intervals for numeric inputs. </li><br>
+  <li><b>title:</b> Provides a tooltip with instructions for validation. </li><br>
+</ol>
+  <b>Example: Validating a Form</b>
+  <pre>
+    &lt;!DOCTYPE html>
+    &lt;html lang="en"> 
+    &lt;head> 
+      &lt;meta charset="UTF-8">
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      &lt;title>Form Validation&lt;/title> 
+      &lt;/head> 
+      &lt;body>
+        &lt;form action="submit_form.php" method="post"> 
+          &lt;!-- Name Field (Required, Min Length: 3, Max Length: 20) --> 
+          &lt;label for="name">Name:&lt;/label>
+          &lt;input type="text" id="name" name="name" required minlength="3" maxlength="20" title="Name must be between 3 and 20 characters."> &lt;br>&lt;br>
+          &lt;!-- Email Field (Required, Valid Email Format) --> 
+          &lt;label for="email">Email:&lt;/label>
+          &lt;input type="email" id="email" name="email" required title="Please enter a valid email address."> &lt;br>&lt;br>
+          &lt;!-- Password Field (Required, Min Length: 6) --> 
+          &lt;label for="password">Password:&lt;/label>
+          &lt;input type="password" id="password" name="password" required minlength="6" title="Password must be at least 6 characters long."> <br><br>
+          &lt;!-- Age Field (Optional, Numeric, Between 18 and 100) --> 
+          &lt;label for="age">Age:&lt;/label>
+          &lt;input type="number" id="age" name="age" min="18" max="100" step="1" title="Age must be between 18 and 100."> &lt;br>&lt;br>
+          &lt;!-- Phone Number Field (Required, Custom Pattern) --> 
+          &lt;label for="phone">Phone Number:&lt;/label>
+          &lt;input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Phone number must be 10 digits."> &lt;br>&lt;br> 
+          &lt;!-- Submit Button --> 
+          &lt;input type="submit" value="Submit">          
+        &lt;/form>
+      &lt;/body>
+    &lt;/html> 
+  </pre>
+<b>Explanation of Attributes in the Example </b>
+<ol>
+  <li> <b>Name Field:</b>
+    <ul>
+      <li>The required attribute ensures the user cannot leave it blank. </li><br>
+      <li>minlength and maxlength enforce length restrictions. </li><br>
+      <li>title provides user guidance. </li><br>
+    </ul>
+  </li><br>
+  
+  <li><b>E-Mail Field:</b>
+    <ul>
+      <li>The type="email" validates the input to match an email format (e.g., example@domain.com). </li>
+    </ul>
+  </li><br>
+  
+  <li><b>Password Field: </b>
+    <ul> 
+       <li>The minlength="6" ensures a minimum password length. </li>
+    </ul>
+  </li><br>
+  
+  <li><b>Age Field:</b>
+    <ul>
+      <li>type="number" ensures only numbers are allowed. </li><br>
+    <li>min and max set the valid age range. </li><br>
+    <li>step="1" ensures the input increases or decreases by 1 unit. </li><br>
+    </ul>
+  </li><br>
+  
+  <li><b>Phone Number Field: </b>
+    <ul>
+      <li>type="tel" is used for phone numbers. </li><br>
+    <li>pattern="[0-9]{10}" enforces exactly 10 numeric digits.</li><br>
+    
+    </ul>
+  </li><br>
+</ol>
+  <p><b>How HTML Validation Works </b><br></p>
+  <ul>
+     <li>If a user submits invalid data, the browser will block the submission and display error messages. </li><br>
+    <li>For example, if the email format is incorrect, the browser shows: <b> "Please include an '@' in the email address." </b></li>
+     </ul><hr>
+     <button><a href="table.html">Previous Page</a>  </button>
+    <button> <a href="semantic.html">Next Page</a></button>
+      
+</body>
+</html>

@@ -1,0 +1,61 @@
+*{
+    margin: 1%;
+    padding: 0%;
+    font-family: Arial;
+    color: white; 
+    background-color: #1b0b3b; 
+    text-decoration: none; 
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.flex-container div{
+    height: 10%;
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+     
+    
+}
+.upperflex-container{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: left; 
+      
+    
+}
+.upperflex-container div{
+    height: 80px;
+    width: 100%;
+    margin: 0%;
+    padding: 1%;
+}
+.script{
+    color: black;
+    background-color: #f7f9fa;
+    margin: 7%;
+    padding: 7%;
+    height: 650px;
+    font-size: 20px;
+    
+}
+.hh3{
+    margin: 7%;
+    
+}
+h2{
+    color: #0687a1;
+}
+h3{
+    color: #ed9f18;
+}
+
+
+
+

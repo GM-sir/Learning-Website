@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Header-->
+  <header> 
+    <div class="upperflex-container">
+      <div class="logo"><img src="image/logo.png" height="80px" width="65px" ></div>
+      
+      
+      
+    </div>
+    <div class="flex-container">
+      <div><a href="home.html">Home</a></div>
+      <div><a href="index.html">HTML</a></div>
+      <div><a href="learnCSS.html">CSS</a></div>
+      <div><a href="aboutus.html">About Us</a></div>
+      <div><a href="contractUs.html">Contract Us</a></div>
+    </div><hr>
+  </header><br> <br>
+  
+  <h3>Learn With GM Sir</h3><br>
+  <h3>Tables</h3>
+  <b>Basic Table Tags </b>
+  <ul type="disc">
+    <li>&lt;table>: Defines the table. </li><br>
+    <li>&lt;tr>: Represents a table row. </li><br>
+    <li>&lt;th>: Represents a table header. </li><br>
+    <li>&lt;td>: Represents a table cell. </li><br>
+  </ul>
+  <h3>Code Example:</h3>
+  <pre>
+    &lt;table border="1"> 
+      &lt;tr>
+        &lt;th>Name&lt;/th> 
+        &lt;th>Age&lt;/th> 
+        &lt;th>City&lt;/th>
+      &lt;/tr> 
+      &lt;tr> 
+        &lt;td>John&lt;/td> 
+        &lt;td>25&lt;/td> 
+        &lt;td>New York&lt;/td>         
+      &lt;/tr>
+      &lt;tr> 
+        &lt;td>Jane&lt;/td>
+        &lt;td>30&lt;/td>
+        &lt;td>London&lt;/td>
+      &lt;/tr> 
+    &lt;/table> 
+  </pre>
+  <h3>Here’s an example of an HTML table using the colspan and rowspan attributes: </h3>
+  <pre>
+     &lt;!DOCTYPE html> 
+     &lt;html lang="en">
+     &lt;head> 
+       &lt;meta charset="UTF-8"> 
+       &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+       &lt;title>Table with Colspan and Rowspan &lt;/title>      
+     &lt;/head> 
+     &lt;body> 
+       &lt;table border="1"> 
+    <b> &lt;!-- Table Header --></b> 
+         &lt;tr> 
+           &lt;th>Category &lt;/th>
+           &lt;th>Item &lt;/th> 
+           &lt;th>Quantity &lt;/th>          
+         &lt;/tr> 
+    <b> &lt;!-- Row 1 --> </b>
+         &lt;tr> 
+           &lt;td rowspan="2">Fruits &lt;/td>   &lt;!-- Spans 2 rows -->
+           &lt;td>Apple &lt;/td> 
+           &lt;td>10 &lt;/td>           
+         &lt;/tr>
+    <b>&lt;!-- Row 2 --></b>
+         &lt;tr> 
+           &lt;td>Banana &lt;/td>
+           &lt;td>20 &lt;/td>         
+         &lt;/tr> 
+    			  	&lt;!-- Row 3 --> 
+          &lt;tr> 
+            &lt;td>Vegetables&lt;/td> 
+            &lt;td colspan="2">Carrot and Spinach</td> <!-- Spans 2 columns -->            
+          &lt;/tr>       
+       &lt;/table>  
+     &lt;/body> 
+     &lt;/html> 
+</pre>
+<h3>Explanation</h3>
+<ol>
+  <li>
+    <b>rowspan: </b>
+    <ul> 
+      <li>Used in the "Fruits" cell to merge it across two rows. </li><br>
+      <li>Value rowspan="2" indicates the cell spans 2 rows. </li>
+    </ul>
+  </li><br>
+  <li>
+    <b>colspan: </b>
+    <ul>
+      <li>Used in the "Carrot and Spinach" cell to merge it across two columns. </li><br>
+      <li>Value colspan="2" indicates the cell spans 2 columns. </li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Output</h3><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Table with Colspan and Rowspan</title> 
+</head>
+<body> 
+  <table border="1" cellspacing="0"> 
+    <!-- Table Header --> 
+    <tr> 
+      <th>Category</th>
+      <th>Item</th>
+      <th>Quantity</th>     
+    </tr> 
+    <!-- Row 1 --> 
+    <tr>
+      <td rowspan="2">Fruits</td>
+      <!-- Spans 2 rows -->
+      <td>Apple</td>
+      <td>10</td>      
+    </tr>
+    <!-- Row 2 --> 
+    <tr> 
+      <td>Banana</td> 
+      <td>20</td>      
+    </tr>
+    <!-- Row 3 --> 
+    <tr>
+      <td>Vegetables</td> 
+      <td colspan="2">Carrot and Spinach</td>
+      <!-- Spans 2 columns -->
+    </tr>
+  </table>
+</body>
+</html><br>
+This creates a neat table with merged cells without using CSS. <br><br>
+   
+<button><a href="linksandimage.html">Previous Page</a>  </button>
+    <button> <a href="form.html">Next Page</a></button>
+</body>
+</html>
